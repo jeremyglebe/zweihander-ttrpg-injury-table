@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Injury Table</title>
+    <link rel="stylesheet" href="./bulma.css">
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Script that provides injury table data -->
+    <script src="./data.js"></script>
+    <!-- Script that provides behavior for the controls -->
+    <script src="./controls.js"></script>
+</head>
+
+<body>
+
+    <div class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Injury Table Roller</h1>
+                <h2 class="subtitle">Zweihander - Leather, Steel, Blade and Bone</h2>
+            </div>
+        </div>
+    </div>
+
+    <div id="weapon-type-controls" class="controls">
+        <div id="weapon-type-buttons" class="button-list">
+            <button class="button is-primary is-large" onclick="selectWeaponType('bladed')">Bladed</button>
+            <button class="button is-primary is-large" onclick="selectWeaponType('crushing')">Crushing</button>
+            <button class="button is-primary is-large" onclick="selectWeaponType('gunpowder')">Gunpowder</button>
+            <button class="button is-primary is-large" onclick="selectWeaponType('missile')">Missile</button>
+            <button class="button is-primary is-large" onclick="selectWeaponType('pyromancy')">Pyromancy</button>
+        </div>
+    </div>
+
+    <div id="hit-location-controls" class="controls">
+        <div id="hit-location-buttons" class="button-list">
+            <button class="button is-primary is-large" onclick="selectHitLocation('head')">Head</button>
+            <button class="button is-primary is-large" onclick="selectHitLocation('arms')">Arms</button>
+            <button class="button is-primary is-large" onclick="selectHitLocation('body')">Body</button>
+            <button class="button is-primary is-large" onclick="selectHitLocation('legs')">Legs</button>
+        </div>
+    </div>
+
+    <div id="injury-level-controls" class="controls">
+        <div id="injury-level-buttons" class="button-list">
+            <button class="button is-primary is-large" onclick="selectInjuryLevel('moderate')">Moderate</button>
+            <button class="button is-primary is-large" onclick="selectInjuryLevel('serious')">Serious</button>
+            <button class="button is-primary is-large" onclick="selectInjuryLevel('grievous')">Grievous</button>
+        </div>
+    </div>
+
+    <!-- Modal to display the results -->
+    <div id="results-modal" class="modal">
+        <!-- Clickable background which closes modal -->
+        <div class="modal-background" onclick="closeResultsModal()"></div>
+        <div id="results-content" class="modal-content">
+            <!-- Content for the modal to display when up -->
+            <div class="card">
+                <header class="card-header">
+                    <p id="results-title" class="card-header-title">
+                        [Injury Name]
+                    </p>
+                </header>
+                <div class="card-content">
+                    <div id="results-description" class="content">
+                        [Description of the injury]
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <!-- Confirm button which closes the modal -->
+                    <button class="button card-footer-item" onclick="closeResultsModal()">Okay!</button>
+                </footer>
+            </div>
+        </div>
+        <!-- Explicit button to close the modal -->
+        <button class="modal-close is-large" aria-label="close" onclick="closeResultsModal()"></button>
+    </div>
+
+</body>
+
+</html>

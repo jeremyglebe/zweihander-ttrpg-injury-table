@@ -1,0 +1,236 @@
+{
+    "COMMENT": [
+        "(On Copilot Awesomeness",
+        "I copy/pasted all of the data tables from the source book into comments in this file.",
+        "Because the book was a PDF, the formatting was DESTROYED in the process and it would have taken",
+        "me forever to write something to parse it. But this wonderful little robot did it for me. Not",
+        "writing the tool, but rather all the data entry. It UNDERSTOOD the insanely scrambled source",
+        "data and parsed it into a nice, clean, readable format. I occasionally made corrections but it",
+        "almost always learned from them and corrected future entries. It wasn't perfect, but it saved me",
+        "what I believe to be 10+ hours of work. I love you, Copilot.",
+        "(And thanks to GitHub for creating Copilot :) )"
+    ],
+    "damage_types": {
+        "bladed": {
+            "severities": {
+                "moderate": {
+                    "locations": {
+                        "head": {
+                            "injuries": []
+                        },
+                        "arms": {
+                            "injuries": []
+                        },
+                        "body": {
+                            "injuries": []
+                        },
+                        "legs": {
+                            "injuries": []
+                        }
+                    }
+                },
+                "serious": {
+                    "locations": {
+                        "head": {
+                            "injuries": []
+                        },
+                        "arms": {
+                            "injuries": []
+                        },
+                        "body": {
+                            "injuries": []
+                        },
+                        "legs": {
+                            "injuries": []
+                        }
+                    }
+                },
+                "grievous": {
+                    "locations": {
+                        "head": {
+                            "injuries": []
+                        },
+                        "arms": {
+                            "injuries": []
+                        },
+                        "body": {
+                            "injuries": []
+                        },
+                        "legs": {
+                            "injuries": []
+                        }
+                    }
+                }
+            }
+        },
+        "crushing": {
+            "severities": {
+                "moderate": {
+                    "locations": {
+                        "head": {
+                            "injuries": []
+                        },
+                        "arms": {
+                            "injuries": []
+                        },
+                        "body": {
+                            "injuries": []
+                        },
+                        "legs": {
+                            "injuries": []
+                        }
+                    }
+                },
+                "serious": {
+                    "locations": {
+                        "head": {
+                            "injuries": []
+                        },
+                        "arms": {
+                            "injuries": []
+                        },
+                        "body": {
+                            "injuries": []
+                        },
+                        "legs": {
+                            "injuries": []
+                        }
+                    }
+                },
+                "grievous": {
+                    "locations": {
+                        "head": {
+                            "injuries": []
+                        },
+                        "arms": {
+                            "injuries": []
+                        },
+                        "body": {
+                            "injuries": []
+                        },
+                        "legs": {
+                            "injuries": []
+                        }
+                    }
+                }
+            }
+        },
+        "gunpowder": {
+            "severities": {
+                "moderate": {
+                    "locations": {
+                        "head": {
+                            "injuries": []
+                        },
+                        "arms": {
+                            "injuries": []
+                        },
+                        "body": {
+                            "injuries": []
+                        },
+                        "legs": {
+                            "injuries": []
+                        }
+                    }
+                },
+                "serious": {
+                    "locations": {
+                        "head": {
+                            "injuries": []
+                        },
+                        "arms": {
+                            "injuries": []
+                        },
+                        "body": {
+                            "injuries": []
+                        },
+                        "legs": {
+                            "injuries": []
+                        }
+                    }
+                },
+                "grievous": {
+                    "locations": {
+                        "head": {
+                            "injuries": []
+                        },
+                        "arms": {
+                            "injuries": []
+                        },
+                        "body": {
+                            "injuries": []
+                        },
+                        "legs": {
+                            "injuries": []
+                        }
+                    }
+                }
+            }
+        },
+        "missile": {
+            "severities": {
+                "moderate": {
+                    "locations": {
+                        "head": {
+                            "injuries": []
+                        },
+                        "arms": {
+                            "injuries": []
+                        },
+                        "body": {
+                            "injuries": []
+                        },
+                        "legs": {
+                            "injuries": []
+                        }
+                    }
+                },
+                "serious": {
+                    "locations": {
+                        "head": {
+                            "injuries": []
+                        },
+                        "arms": {
+                            "injuries": []
+                        },
+                        "body": {
+                            "injuries": []
+                        },
+                        "legs": {
+                            "injuries": []
+                        }
+                    }
+                },
+                "grievous": {
+                    "locations": {
+                        "head": {
+                            "injuries": []
+                        },
+                        "arms": {
+                            "injuries": []
+                        },
+                        "body": {
+                            "injuries": []
+                        },
+                        "legs": {
+                            "injuries": []
+                        }
+                    }
+                }
+            }
+        },
+        "pyromancy": {
+            "severities": null,
+            "injuries": [
+                {
+                    "name": "On Fire!",
+                    "description": "TBD"
+                }
+            ]
+        }
+    },
+    "tag_descriptions": {
+        "⦿": "The shot is still lodged in place. A successful Heal test will remove the shot with no penalty to the victim. A failed Heal test will result in the shot being removed but the Patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will su er 2d10 +2 physical Peril. If the injury is Grievous, removing the shot is part of the surgery",
+        "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+    }
+}

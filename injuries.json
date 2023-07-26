@@ -1,0 +1,1440 @@
+{
+    "COMMENT": [
+        "(On Copilot Awesomeness",
+        "I copy/pasted all of the data tables from the source book into comments in this file.",
+        "Because the book was a PDF, the formatting was DESTROYED in the process and it would have taken",
+        "me forever to write something to parse it. But this wonderful little robot did it for me. Not",
+        "writing the tool, but rather all the data entry. It UNDERSTOOD the insanely scrambled source",
+        "data and parsed it into a nice, clean, readable format. I occasionally made corrections but it",
+        "almost always learned from them and corrected future entries. It wasn't perfect, but it saved me",
+        "what I believe to be 10+ hours of work. I love you, Copilot.",
+        "(And thanks to GitHub for creating Copilot :) )"
+    ],
+    "bladed": {
+        "head": {
+            "moderate": [
+                {
+                    "name": "Haircut or Helmet Ding",
+                    "effect": "Ignore injury and as a bonus you will not need a haircut for a while"
+                },
+                {
+                    "name": "Grazed Cheek",
+                    "effect": "Succeed at a Toughness test to use any skill that relies on your voice"
+                },
+                {
+                    "name": "Grazed Brow",
+                    "effect": "Succeed at a Toughness test to use any skill that relies on your vision"
+                },
+                {
+                    "name": "Ripped Out Earring/Cut Lobe",
+                    "effect": "Succeed at a Toughness test to use any skill test that relies on your hearing"
+                },
+                {
+                    "name": "Beard Trim / Chin Cut",
+                    "effect": "Flip to fail any skill test that relies on your Fellowship"
+                },
+                {
+                    "name": "Helmet / Head Bash",
+                    "effect": "Reduce your Initiative by 3"
+                }
+            ],
+            "serious": [
+                {
+                    "name": "Grazed Eye",
+                    "effect": "Skill tests that rely on your vision are considered Challenging (-10%). With the exception of Ranged attacks; Medium range is considered Hard (-20%) and Long range is Arduous (-30%)"
+                },
+                {
+                    "name": "Scalped / or 5 if Helmet",
+                    "effect": "May not use any Reactions"
+                },
+                {
+                    "name": "Jaw Slashed",
+                    "effect": "Flip to fail any skill test which relies on your voice"
+                },
+                {
+                    "name": "Helmet Thrown Off / or 6",
+                    "effect": "Only slightly rattled,you must succeed at a Resolve test each Turn or be Stunned. In addition, your helmet is throw 3 yards in a random direction"
+                },
+                {
+                    "name": "Head Trauma",
+                    "effect": "Cannot use Special Actions in combat"
+                },
+                {
+                    "name": "Skull Fracture",
+                    "effect": "Flip to fail all skill tests"
+                }
+            ],
+            "grievous": [
+                {
+                    "name": "Severe Concussion",
+                    "status": "You may only Move as you are in pain.",
+                    "drawback": "Ne'er Do Well (If you already have this Drawback, you permanently lose 3% Intelligence)"
+                },
+                {
+                    "name": "Mutilated Eye",
+                    "status": "You cannot see as you're blinded.",
+                    "drawback": "Black Cataract (If you already have this Drawback, you permanently lose 3% Perception)"
+                },
+                {
+                    "name": "Mutilated Ear",
+                    "status": "You cannot hear as you're in pain.",
+                    "drawback": "Crop Ear (If you already have this Drawback, you permanently lose 6% Perception)"
+                },
+                {
+                    "name": "Mutilated Nose",
+                    "status": "You cannot smell as you're in pain.",
+                    "drawback": "Split Face (If you already have this Drawback, you permanently lose 6% Perception)"
+                },
+                {
+                    "name": "Cerebral Contusion",
+                    "status": "Unconscious.",
+                    "drawback": "Dunderhead (If you already have this Drawback, you permanently lose 9% Intelligence)"
+                },
+                {
+                    "name": "Punctured Artery",
+                    "status": "Incapacitated",
+                    "effect": "You are Bleeding",
+                    "drawback": "Frequent Seizure (If you already have this Drawback, you permanently lose 9% Brawn)"
+                }
+            ]
+        },
+        "arms": {
+            "moderate": [
+                {
+                    "name": "Grazed Hand",
+                    "effect": "Ignore injury and as a bonus you now have an X scar marked on the top of your hand."
+                },
+                {
+                    "name": "Ripped O Fingernail",
+                    "effect": "You immediately drop whatever you are holding in this hand. All melee weapon attacks with this hand are considered Challenging (-10%)."
+                },
+                {
+                    "name": "Grazed Forearm",
+                    "effect": "You cannot use a choke hold."
+                },
+                {
+                    "name": "Minor Cut to Elbow",
+                    "effect": "All ranged weapon attacks with this hand are considered Challenging (-10%)."
+                },
+                {
+                    "name": "Upper Arm Grazed",
+                    "effect": "Double the penalty to climb or swim for Movement Actions."
+                },
+                {
+                    "name": "Grazed Shoulder",
+                    "effect": "It will cost you 1 Ap to draw, pick up, swap or give a weapon to an ally"
+                }
+            ],
+            "serious": [
+                {
+                    "name": "Back of Hand Slashed",
+                    "effect": "You immediately drop whatever you are holding in this hand. You must pass a Toughness test in order to hold anything in this hand. Test before each combat."
+                },
+                {
+                    "name": "Thumb Sliced",
+                    "effect": "You immediately drop whatever you are holding in this hand. You can not use this hand at all, even to hold something."
+                },
+                {
+                    "name": "Forearm Pierced",
+                    "effect": "You immediately drop whatever you are holding in this hand. You can not use a shield with this hand or perform a choke hold."
+                },
+                {
+                    "name": "Elbow Slashed",
+                    "effect": "You immediately drop whatever you are holding in this hand. You can not use any combat actions at all with this hand."
+                },
+                {
+                    "name": "Bicep Gashed",
+                    "effect": "You immediately drop whatever you are holding in this hand. Flip to fail all Combat, Brawn and Agility tests."
+                },
+                {
+                    "name": "Shoulder Sliced",
+                    "effect": "You immediately drop whatever you are holding in this hand. Suffer all the ill effect of Bicep Gashed. You can not carry a backpack, rucksack or shoulder bag"
+                }
+            ],
+            "grievous": [
+                {
+                    "name": "Wrist Slashed",
+                    "status": "You cannot use this hand as you are in pain.",
+                    "drawback": "Bleeder (If you already have this Drawback, you permanently lose 3% Combat)"
+                },
+                {
+                    "name": "Bicep/Tricep Tendon Cut",
+                    "status": "You cannot use this arm as you are in pain.",
+                    "drawback": "Two-handed Trouble (If you already have this Drawback, you permanently lose 3% Combat)"
+                },
+                {
+                    "name": "Forearm Tendon Cut",
+                    "status": "You cannot use this arm as you are in pain.",
+                    "drawback": "Limp Wrist (If you already have this Drawback, you permanently lose 6% Brawn)"
+                },
+                {
+                    "name": "Fingers Removed",
+                    "status": "You cannot use this hand as you are in pain.",
+                    "effect": "You lose 1D6-1 fingers. For every finger lost, you permanently lose 1% Agility. If you lose all fingers, you gain the listed Drawback.",
+                    "drawback": "Veteran's Hand (If you already have this Drawback, you permanently lose 6% Agility)"
+                },
+                {
+                    "name": "Shoulder Ligaments Cut",
+                    "status": "You cannot use this arm as you are in pain.",
+                    "drawback": "Light Load (If you already have this Drawback, you permanently lose 9% Brawn)"
+                },
+                {
+                    "name": "Upper Arm Cleaved",
+                    "status": "You cannot use this arm as you are in pain.",
+                    "drawback": "Veterans Arm (If you already have this Drawback, you permanently lose 9% Brawn)"
+                }
+            ]
+        },
+        "body": {
+            "moderate": [
+                {
+                    "name": "Grazed Stomach",
+                    "effect": "Ignore injury and as a bonus you can look cool and lick the blood of your wound like Bruce Leigh, in Enter the Wyrm."
+                },
+                {
+                    "name": "Grazed Chest",
+                    "effect": "You are Stunned and only have 2 AP per turn."
+                },
+                {
+                    "name": "Stinging Cut to Groin",
+                    "effect": "You must add 1 additional AP to all Movement Actions."
+                },
+                {
+                    "name": "Grazed Ribs",
+                    "effect": "It is difficult to catch your breath, you can not use Inspiring Words or Litany of Hatred."
+                },
+                {
+                    "name": "Cut Armpit",
+                    "effect": "You must add 1 additional AP to any Load or Take Aim Actions."
+                },
+                {
+                    "name": "Grazed Collarbone",
+                    "effect": "Reduce your encumbrance by 3."
+                }
+            ],
+            "serious": [
+                {
+                    "name": "Slashed Abdomen",
+                    "effect": "Standard Agility and Willpower Tests are now Hard (-20%)."
+                },
+                {
+                    "name": "Jarring Cut to Ribs",
+                    "effect": "Flip to fail all Tests that use your voice or breath."
+                },
+                {
+                    "name": "Sliced Chest",
+                    "effect": "Flip to fail all Ranged Attack Tests."
+                },
+                {
+                    "name": "Slashed Back",
+                    "effect": "Your encumbrance is halved."
+                },
+                {
+                    "name": "Slashed Side",
+                    "effect": "You must pass a Resolve Test to do any Action other than Hustle."
+                },
+                {
+                    "name": "Punctured Armpit",
+                    "effect": "You can not use this arm."
+                }
+            ],
+            "grievous": [
+                {
+                    "name": "Lower Side Fractured",
+                    "status": "Incapacitated.",
+                    "drawback": "Restless Sleep (If you already have this Drawback, you permanently lose 3% Brawn)"
+                },
+                {
+                    "name": "Heavy cut to the Ribs",
+                    "status": "Incapacitated.",
+                    "drawback": "Bad Ticker (If you already have this Drawback, you permanently lose 3% Brawn)"
+                },
+                {
+                    "name": "Abdomen Sliced",
+                    "status": "You can do nothing but hold your guts in.",
+                    "drawback": "Sour Stomach (If you already have this Drawback, you permanently lose 6% Brawn)"
+                },
+                {
+                    "name": "Collar Bone Broke",
+                    "status": "Unconscious.",
+                    "drawback": "Light Load (If you already have this Drawback, you permanently lose 6% Willpower)"
+                },
+                {
+                    "name": "Lung Punctured",
+                    "status": "Unconscious.",
+                    "drawback": "Weak Lungs (If you already have this Drawback, you permanently lose 9% Willpower)"
+                },
+                {
+                    "name": "Crippling Stab to the Spine",
+                    "status": "Unconscious.",
+                    "drawback": "Partial Paralysis (If you already have this Drawback, you permanently lose 9% Agility)"
+                }
+            ]
+        },
+        "legs": {
+            "moderate": [
+                {
+                    "name": "Grazed Foot",
+                    "effect": "Ignore injury, but unfortunately your boot and shoe laces are cut and will need to be replaced."
+                },
+                {
+                    "name": "Calf Grazed",
+                    "effect": "Refer to the movement adjustment table on page 31."
+                },
+                {
+                    "name": "Scraped Shins",
+                    "effect": "Refer to the movement adjustment table on page 31."
+                },
+                {
+                    "name": "Grazed Knee",
+                    "effect": "Refer to the movement adjustment table on page 31."
+                },
+                {
+                    "name": "Minor cut to Thigh",
+                    "effect": "Refer to the movement adjustment table on page 31."
+                },
+                {
+                    "name": "Grazed Buttocks",
+                    "effect": "Refer to the movement adjustment table on page 31."
+                }
+            ],
+            "serious": [
+                {
+                    "name": "Sliced Foot",
+                    "effect": "Refer to the movement adjustment table on page 31. You cannot Run or Charge."
+                },
+                {
+                    "name": "Punctured Calf",
+                    "effect": "Refer to the movement adjustment table on page 31. As number 1, also you must add 1 AP to Get Up, Hustle, Maneuver and Take Cover."
+                },
+                {
+                    "name": "Slashed Shin",
+                    "effect": "Refer to the movement adjustment table on page 31. You must flip to fail all Reaction Tests."
+                },
+                {
+                    "name": "Sliced Knee",
+                    "effect": "Refer to the movement adjustment table on page 31. You are Knocked Prone and cannot take any Movement Actions on your own."
+                },
+                {
+                    "name": "Gashed Thigh",
+                    "effect": "Refer to the movement adjustment table on page 31. You cannot use any Reactions."
+                },
+                {
+                    "name": "Flat of Blade to Groin",
+                    "effect": "Refer to the movement adjustment table on page 31. You are Defenseless and Stunned."
+                }
+            ],
+            "grievous": [
+                {
+                    "name": "Punctured Thigh",
+                    "status": "You cannot use Movement Actions as you are in pain.",
+                    "drawback": "Bum Leg (If you already have this Drawback, you permanently lose 3% Brawn)"
+                },
+                {
+                    "name": "Maimed Foot",
+                    "status": "You cannot use any weapon with an Encumbrance Value of 2 or more, as you're in pain.",
+                    "effect": "You lose 1D6-1 toes. For every toe lost, you permanently lose 1% Brawn. If you lose all toes, you gain the listed Drawback.",
+                    "drawback": "Veteran's Boot (If you already have this Drawback, you permanently lose 6% Brawn)"
+                },
+                {
+                    "name": "Heavily-Cut Calf",
+                    "status": "You cannot use any weapon with an Encumbrance Value of 2 or more, as you're in pain.",
+                    "drawback": "Light Load (If you already have this Drawback, you permanently lose 6% Brawn)"
+                },
+                {
+                    "name": "Slashed Knee",
+                    "status": "You cannot use Movement Actions as you are in pain.",
+                    "drawback": "Manikin Joint (If you already have this Drawback, you permanently lose 6% Agility)"
+                },
+                {
+                    "name": "Pierced Artery",
+                    "status": "You cannot use Movement Actions as you are in pain.",
+                    "effect": "You are Bleeding.",
+                    "drawback": "Veteran's Leg (If you already have this Drawback, you permanently lose 9% Agility)"
+                },
+                {
+                    "name": "Cut Achilles Tendon",
+                    "status": "You cannot use Movement Actions as you are in pain.",
+                    "drawback": "Hobbled Gait (If you already have this Drawback, you permanently lose 9% Agility)"
+                }
+            ]
+        }
+    },
+    "crushing": {
+        "head": {
+            "moderate": [
+                {
+                    "name": "Close Call",
+                    "effect": "Ignore injury, you quickly pull back as the blow misses your face by a hair."
+                },
+                {
+                    "name": "Cheek Smack",
+                    "effect": "You must pass a Resolve test in order to use your voice for any action."
+                },
+                {
+                    "name": "Brow Blow",
+                    "effect": "You see stars and must take Aim for any Attack Actions."
+                },
+                {
+                    "name": "Ear Ringer",
+                    "effect": "You must flip to fail any skill test that relies on your hearing."
+                },
+                {
+                    "name": "Chin Chomp",
+                    "effect": "You must flip to fail any skill test that relies on your voice."
+                },
+                {
+                    "name": "Helmet / Head Blow",
+                    "effect": "You are Stunned. Also, you must roll a 1d6 chaos die. If you roll a face “6” you fall prone on the ground for 1 minute."
+                }
+            ],
+            "serious": [
+                {
+                    "name": "Black Eye",
+                    "effect": "You must flip to fail all skill tests that rely on your vision."
+                },
+                {
+                    "name": "Neck Jammer",
+                    "effect": "You are always considered surprised during combat."
+                },
+                {
+                    "name": "Tooth Extractor",
+                    "effect": "You must flip to fail all skill tests that rely on your voice."
+                },
+                {
+                    "name": "Ear Smash",
+                    "effect": "You must flip to fail all skill tests that rely on your hearing. Also loss of your equilibrium – 1 Agility Bonus."
+                },
+                {
+                    "name": "Head Wallop",
+                    "effect": "You must flip to fail all skill tests under Perception, Intelligence and Will Power."
+                },
+                {
+                    "name": "Skull Cracker",
+                    "effect": "You must flip to fail all skill tests."
+                }
+            ],
+            "grievous": [
+                {
+                    "name": "Eye Burst",
+                    "status": "You cannot see as you're blinded.",
+                    "drawback": "Black Cataract (If you already have this Drawback, you permanently lose 3% Perception)"
+                },
+                {
+                    "name": "Jaw Breaker",
+                    "status": "You cannot talk as you're in pain.",
+                    "drawback": "Cat got your Tongue (If you already have this Drawback, you can no longer speak)"
+                },
+                {
+                    "name": "Nose Bashed",
+                    "status": "You cannot smell as you're in pain.",
+                    "drawback": "Split Face (If you already have this Drawback, you permanently lose 6% Perception)"
+                },
+                {
+                    "name": "Ear Clobber",
+                    "status": "You cannot hear as you're in pain.",
+                    "drawback": "Crop Ear (If you already have this Drawback, you permanently lose 6% Perception)"
+                },
+                {
+                    "name": "Skull Fracture",
+                    "status": "You may only Move as you are in pain.",
+                    "drawback": "Frequent Seizure (If you already have this Drawback, you permanently lose 9% Intelligence)"
+                },
+                {
+                    "name": "Throrgrim Head Smash",
+                    "status": "Unconscious.",
+                    "drawback": "Dunderhead (If you already have this Drawback, you permanently lose 9% Intelligence)"
+                }
+            ]
+        },
+        "arms": {
+            "moderate": [
+                {
+                    "name": "Arm Push",
+                    "effect": "Ignore injury, the weapon pushes your arm around, spinning you in a circle. The only thing injured is your ego, as you look the fool. Fight on!"
+                },
+                {
+                    "name": "Knuckle Rap",
+                    "effect": "You immediately drop whatever you are holding in your hand. You must flip to fail all one-handed melee and ranged attack actions with this hand."
+                },
+                {
+                    "name": "Forearm Strike",
+                    "effect": "You immediately drop whatever you are holding in your hand. You can not use Chokehold, Dirty Tricks, Disarm, Splinter Shield and Stunning Blow Perilous Stunts with this arm."
+                },
+                {
+                    "name": "Funny Bone Blast",
+                    "effect": "You immediately drop whatever you are holding in your hand. You must flip to fail all Ranged Attack Actions with this arm."
+                },
+                {
+                    "name": "Bicep Slap",
+                    "effect": "You immediately drop whatever you are holding in your hand. You can not climb, swim or use the Drive Skill."
+                },
+                {
+                    "name": "Shoulder Bruise",
+                    "effect": "You immediately drop whatever you are holding in your hand. It will cost 1 additional Action Point to do anything with that arm."
+                }
+            ],
+            "serious": [
+                {
+                    "name": "Hand Smash",
+                    "effect": "You immediately drop whatever you are holding in this hand. You can not hold anything in this hand."
+                },
+                {
+                    "name": "Wrist Whack",
+                    "effect": "You immediately drop whatever you are holding in this hand. You can not use this hand for any skill test falling under Combat, Brawn or Agility."
+                },
+                {
+                    "name": "Deep Bruise to Forearm",
+                    "effect": "You immediately drop whatever you are holding in this hand. You can not use a shield in this hand, also you can not perform the Perilous Stunts; Choke Hold, Dirty Tricks, Disarm, Splinter Shield and Stunning Blow."
+                },
+                {
+                    "name": "Elbow Crunch",
+                    "effect": "You immediately drop whatever you are holding in this hand. Your lower arm hangs limp at your side, you can not use that hand for anything."
+                },
+                {
+                    "name": "Severe Bruise to Upper Arm",
+                    "effect": "You immediately drop whatever you are holding in this hand. This arm is useless and you must add 1 Action Point to use any Combat action with your other arm."
+                },
+                {
+                    "name": "Should Dislocated",
+                    "effect": "You immediately drop whatever you are holding in this hand. This arm hang limp at your side, totally useless. Suffer all the ill effects of Severe Bruise, in addition you can not carry a backpack, rucksack or shoulder bag."
+                }
+            ],
+            "grievous": [
+                {
+                    "name": "Forearm Shattered",
+                    "status": "You cannot use this arm as you are in pain.",
+                    "drawback": "Two-Handed Trouble (If you already have this Drawback, you permanently lose 3% Brawn.)"
+                },
+                {
+                    "name": "Wrist Crack",
+                    "status": "You cannot use this arm as you are in pain.",
+                    "drawback": "Limp Wrist (If you already have this Drawback, you permanently lose 6% Combat.)"
+                },
+                {
+                    "name": "Upper Arm Fracture",
+                    "status": "You cannot use this arm as you are in pain.",
+                    "drawback": "Light Load (If you already have this Drawback, you permanently lose 6% Brawn.)"
+                },
+                {
+                    "name": "Broken Fingers",
+                    "status": "You cannot use this hand as you are in pain. Effect: You lose the use of 1D6-1 fingers. For every finger smashed, you permanently lose 1% Agility. If all your fingers are smashed, you gain the listed Drawback.",
+                    "drawback": "Open Hand (If you already have this Drawback, you permanently lose 9% Agility.)"
+                },
+                {
+                    "name": "Elbow Blast",
+                    "status": "You cannot use this arm as you are in pain.",
+                    "drawback": "Limited Mobility (If you already have this Drawback, you permanently lose 9% Combat.)"
+                },
+                {
+                    "name": "Shoulder Decimated",
+                    "status": "You cannot use this arm as you are in pain.",
+                    "drawback": "Veteran's Arm (If you already have this Drawback, you permanently lose 9% Brawn)"
+                }
+            ]
+        },
+        "body": {
+            "moderate": [
+                {
+                    "name": "Chest Knock",
+                    "effect": "Ignore injury, the light blow to the chest prompts a couple of deep coughs from you but nothing more. Fight on!"
+                },
+                {
+                    "name": "Groin Thump",
+                    "effect": "You must add 1 Action Point to all movement actions. Also for first round only you are Stunned."
+                },
+                {
+                    "name": "Abdomen Poke",
+                    "effect": "If your condition is lower than Unhindered on the Peril Condition Track you are Stunned and have 1 less Action Point each turn."
+                },
+                {
+                    "name": "Rib Jab",
+                    "effect": "It is di± cult to catch your breath. You can not use Inspiring Words or Litany of Hatred."
+                },
+                {
+                    "name": "Collar Bone Strike",
+                    "effect": "You can not carry a backpack, rucksack or shoulder bag."
+                },
+                {
+                    "name": "Back Wallop",
+                    "effect": "All Attack actions with two-handed weapons will be one step lower on the Di± culty Rating Chart."
+                }
+            ],
+            "serious": [
+                {
+                    "name": "Side Crusher",
+                    "effect": "You must flip to fail all Perilous Stunts tests."
+                },
+                {
+                    "name": "Groin Stinger",
+                    "effect": "You must pass a Resolve test to do any Action during combat."
+                },
+                {
+                    "name": "Gut Basher",
+                    "effect": "You must flip to fail all Ranged Attack actions."
+                },
+                {
+                    "name": "Chest Slam",
+                    "effect": "You are Stunned. Also you are knocked Prone for Damage taken/3 turns."
+                },
+                {
+                    "name": "Lung Pounder",
+                    "effect": "You must flip to fail all tests that use your voice or breath."
+                },
+                {
+                    "name": "Back Cudgeling",
+                    "effect": "You must flip to fail all Combat and Brawn Tests. Also for the first turn only you are Prone."
+                }
+            ],
+            "grievous": [
+                {
+                    "name": "Heart Stopper",
+                    "status": "Incapacitated.",
+                    "drawback": "Bad Ticker (If you already have this Drawback, you permanently lose 3% Brawn.)"
+                },
+                {
+                    "name": "Lower Back Bludgeoning",
+                    "status": "Incapacitated.",
+                    "drawback": "Pain Killer (If you already have this Drawback, you permanently lose 3% Brawn.)"
+                },
+                {
+                    "name": "Abdomen Impact",
+                    "status": "Incapacitated.",
+                    "drawback": "Uncontrolled Retching (If you already have this Drawback, you permanently lose 6% Brawn.)"
+                },
+                {
+                    "name": "Crushed Ribs",
+                    "status": "Unconscious.",
+                    "drawback": "Weak Lungs (If you already have this Drawback, you permanently lose 9% Willpower.)"
+                },
+                {
+                    "name": "Buttock Lambasting",
+                    "status": "Incapacitated.",
+                    "drawback": "Rigid Spine (If you already have this Drawback, you permanently lose 9% Agility.)"
+                },
+                {
+                    "name": "Broken Back",
+                    "status": "Unconscious.",
+                    "drawback": "Partial Paralysis (If you already have this Drawback, you permanently lose 9% Agility)"
+                }
+            ]
+        },
+        "legs": {
+            "moderate": [
+                {
+                    "name": "Toe Swat",
+                    "effect": "Ignore injury, besides the blood blister at the end of your big toe, all is well. Fight on!"
+                },
+                {
+                    "name": "Shin Scraped",
+                    "effect": "Refer to the movement adjustment table on page 31."
+                },
+                {
+                    "name": "Knee Slug",
+                    "effect": "Refer to the movement adjustment table on page 31."
+                },
+                {
+                    "name": "Thigh Bruising",
+                    "effect": "Refer to the movement adjustment table on page 31."
+                },
+                {
+                    "name": "Hamstring Slap",
+                    "effect": "Refer to the movement adjustment table on page 31."
+                },
+                {
+                    "name": "Hip Blow",
+                    "effect": "Refer to the movement adjustment table on page 31."
+                }
+            ],
+            "serious": [
+                {
+                    "name": "Broken Toes",
+                    "effect": "Refer to the movement adjustment table on page 31. You can not Run, Charge or Maneuver."
+                },
+                {
+                    "name": "Ankle Jolt",
+                    "effect": "Refer to the movement adjustment table on page 31. You must pay 1 additional Action Point for all Movement Actions."
+                },
+                {
+                    "name": "Calf Deep Bruise",
+                    "effect": "Refer to the movement adjustment table on page 31. You must flip to fail all Perilous Stunts."
+                },
+                {
+                    "name": "Knee Wallop",
+                    "effect": "Refer to the movement adjustment table on page 31. You must flip to fail all Reaction Tests."
+                },
+                {
+                    "name": "Thigh Slap",
+                    "effect": "Refer to the movement adjustment table on page 31. You can not use any Reactions."
+                },
+                {
+                    "name": "Hamstring Hammering",
+                    "effect": "Refer to the movement adjustment table on page 31. You are Prone and can not get up on your own."
+                }
+            ],
+            "grievous": [
+                {
+                    "name": "Broken Femur",
+                    "status": "You cannot use Movement Actions as you are in pain.",
+                    "drawback": "Bum Leg (If you already have this Drawback, you permanently lose 3% Brawn.)"
+                },
+                {
+                    "name": "Foot Crushed",
+                    "status": "You cannot use any weapon with an Encumbrance Value of 2 or more, as you're in pain. E ect: Once a Maimed Foot has undergone a failed surgery, you lose 1D6-1 toes. For every toe lost, you permanently lose 1% Brawn. If you lose all toes, you gain the listed Drawback.",
+                    "drawback": "Veteran's Boot (If you already have this Drawback, you permanently lose 6% Brawn.)"
+                },
+                {
+                    "name": "Calf Crunch",
+                    "status": "You cannot use any weapon with an Encumbrance Value of 2 or more, as you're in pain.",
+                    "drawback": "Light Load (If you already have this Drawback, you permanently lose 6% Brawn.)"
+                },
+                {
+                    "name": "Knee Shattered",
+                    "status": "You cannot use Movement Actions as you are in pain.",
+                    "drawback": "Manikin Joint (If you already have this Drawback, you permanently lose 6% Agility.)"
+                },
+                {
+                    "name": "Hyper-extended Knee",
+                    "status": "You cannot use Movement Actions as you are in pain.",
+                    "drawback": "Veteran's Leg (If you already have this Drawback, you permanently lose 9% Agility.)"
+                },
+                {
+                    "name": "Dislocated Femur to Hip",
+                    "status": "Unconscious.",
+                    "drawback": "Hobbled Gait (If you already have this Drawback, you permanently lose 9% Agility.)"
+                }
+            ]
+        }
+    },
+    "gunpowder": {
+        "head": {
+            "moderate": [
+                {
+                    "name": "Helmet Knock/Hair Graze",
+                    "effect": "Ignore injury, minor ricochet offhelmet, an inch or so lower and it would have been your eye."
+                },
+                {
+                    "name": "Ear Graze",
+                    "effect": "You must pass a Toughness Test in order to use any skill that involves hearing."
+                },
+                {
+                    "name": "Forehead Graze",
+                    "effect": "You must pass a Toughness Test in order to use any skill that involves sight."
+                },
+                {
+                    "name": "Cheek Graze",
+                    "effect": "You must pass a Toughness Test in order to use any skill that involves your voice."
+                },
+                {
+                    "name": "Chin Graze",
+                    "effect": "You must pass a Toughness Test or be Stunned, loose 1 Action Point this turn. Test each turn."
+                },
+                {
+                    "name": "Neck Graze",
+                    "effect": "You must pass a Toughness Test or be Defenseless this turn. Test each turn."
+                }
+            ],
+            "serious": [
+                {
+                    "name": "Impact to Skull",
+                    "effect": "Standard tests are now considered Hard (-20%) for Intelligence based skills tests."
+                },
+                {
+                    "name": "Stinging Temple Graze",
+                    "effect": "Skill test that involves your vision, including Combat skills will be Challenging at Short range, Hard at Medium range and Arduous at long range."
+                },
+                {
+                    "name": "Earlobe Blasted O",
+                    "effect": "You must flip to fail any skill tests that involves your hearing."
+                },
+                {
+                    "name": "Cheek Thru & Thru",
+                    "effect": "You must flip to fail any skill test that involves your voice, including casting spells."
+                },
+                {
+                    "name": "Chin Pierced",
+                    "effect": "You must flip to fail Fellowship based skill tests."
+                },
+                {
+                    "name": "Shot Lodged in Neck ⦿",
+                    "effect": "You must flip to fail Inspiring Words, Litany of Hatred and Incantation skill tests unless you pay 1 additional AP.",
+                    "⦿": "The shot is still lodged in place. A successful Heal test will remove the shot with no penalty to the victim. A failed Heal test will result in the shot being removed but the Patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the shot is part of the surgery"
+                }
+            ],
+            "grievous": [
+                {
+                    "name": "Neck Pierced Thru",
+                    "status": "Unconscious.",
+                    "drawback": "Sanguine Temperament (If you already have this Drawback, you permanently lose 3% Will Power.)"
+                },
+                {
+                    "name": "Ear Destroyed",
+                    "status": "You cannot hear as you're in pain.",
+                    "drawback": "Crop Ear (If you already have this Drawback, you permanently lose 6% Perception.)"
+                },
+                {
+                    "name": "Nose Shot O",
+                    "status": "You cannot smell as you're in pain.",
+                    "drawback": "Split Face (If you already have this Drawback, you permanently lose 6% Perception.)"
+                },
+                {
+                    "name": "Mouth Shattered",
+                    "status": "You cannot talk as you're in pain.",
+                    "drawback": "Cat got your Tongue (If you already have this Drawback, you can no longer speak.)"
+                },
+                {
+                    "name": "Eye Ruined ⦿",
+                    "status": "You cannot see as you're blinded.",
+                    "drawback": "Veteran's Eye (If you already have this Drawback, you permanently lose 6% Perception.)",
+                    "⦿": "The shot is still lodged in place. A successful Heal test will remove the shot with no penalty to the victim. A failed Heal test will result in the shot being removed but the Patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the shot is part of the surgery"
+                },
+                {
+                    "name": "Skull Fracture",
+                    "status": "Unconscious.",
+                    "drawback": "Dunderhead (If you already have this Drawback, you permanently lose 9% Intelligence.)"
+                }
+            ]
+        },
+        "arms": {
+            "moderate": [
+                {
+                    "name": "Knuckles Grazed",
+                    "effect": "Ignore injury, your knuckles on this hand are badly scraped. Ignore the calls of 'knuckledragger'. Fight on!"
+                },
+                {
+                    "name": "Wrist Scratched",
+                    "effect": "You must pass a Toughness Test in order to use a two-handed melee or ranged weapon. Roll before each encounter."
+                },
+                {
+                    "name": "Forearm Nicked",
+                    "effect": "You must pass a Toughness Test in order to use Called Shot or Take Aim."
+                },
+                {
+                    "name": "Elbow Scraped",
+                    "effect": "You must pass a Toughness Test in order to use a Thrown weapon."
+                },
+                {
+                    "name": "Grazed Bicep",
+                    "effect": "You must pass a Toughness Test in order to use Perilous Stunts."
+                },
+                {
+                    "name": "Shoulder Grazed",
+                    "effect": "You must pass a Toughness Test in order to use Reactions."
+                }
+            ],
+            "serious": [
+                {
+                    "name": "Hand Thru & Thru",
+                    "effect": "You immediately drop whatever you are holding in this hand. You must flip to fail Melee Attack actions unless you pay 1 additional AP."
+                },
+                {
+                    "name": "Wrist Tendons Damaged",
+                    "effect": "You immediately drop whatever you are holding in this hand. You must flip to fail Ranged Attack actions unless you pay 1 additional AP."
+                },
+                {
+                    "name": "Forearm Bone Fracture ⦿",
+                    "effect": "You immediately drop whatever you are holding in this hand. You must flip to fail Dodge, Opportunity Attack and Parry unless you pay 1 additional AP.",
+                    "⦿": "The shot is still lodged in place. A successful Heal test will remove the shot with no penalty to the victim. A failed Heal test will result in the shot being removed but the Patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the shot is part of the surgery"
+                },
+                {
+                    "name": "Funnybone Hit, Not Funny",
+                    "effect": "You immediately drop whatever you are holding in this hand. You must flip to fail all Attack Actions unless you pay 1 additional AP. Also you are Stunned."
+                },
+                {
+                    "name": "Upper Arm Thru & Thru",
+                    "effect": "You immediately drop whatever you are holding in this hand. You must flip to fail all tests that uses this arm unless you pay 1 additional AP."
+                },
+                {
+                    "name": "Shoulder Muscle Shredded",
+                    "effect": "You immediately drop whatever you are holding in this hand. You must flip to fail all tests that uses this arm unless you pay 1 additional AP. Also you are immediately Stunned."
+                }
+            ],
+            "grievous": [
+                {
+                    "name": "Forearm Artery Punctured",
+                    "status": "You cannot use this arm as you are in pain.",
+                    "effect": "You are Bleeding",
+                    "drawback": "Bleeder (If you already have this Drawback, you permanently lose 3% Brawn.)"
+                },
+                {
+                    "name": "Finger Shot Off",
+                    "status": "You cannot use this hand as you are in pain.",
+                    "drawback": "Two-handed Trouble (If you already have this Drawback, you permanently lose 3% Brawn.)"
+                },
+                {
+                    "name": "Wrist Mangled",
+                    "status": "You cannot use this hand as you are in pain.",
+                    "drawback": "Limp Wrist (If you already have this Drawback, you permanently lose 6% Agility.)"
+                },
+                {
+                    "name": "Elbow Shattered",
+                    "status": "You cannot use this arm as you are in pain.",
+                    "drawback": "Manikin Joint (If you already have this Drawback, you permanently lose 6% Combat.)"
+                },
+                {
+                    "name": "Shoulder Tendons Severed",
+                    "status": "You cannot use this arm as you are in pain.",
+                    "drawback": "Open Hand (If you already have this Drawback, you permanently lose 9% Agility.)"
+                },
+                {
+                    "name": "Tricep Splayed Open",
+                    "status": "You cannot use this arm as you are in pain.",
+                    "drawback": "Limited Mobility (If you already have this Drawback, you permanently lose 9% Brawn.)"
+                }
+            ]
+        },
+        "body": {
+            "moderate": [
+                {
+                    "name": "Belt Buckle Shot",
+                    "effect": "Unfortunately your belt buckle was hit and shatters. Your belt and everything on it falls to the ground, Spend 1 turn gathering all of your gear."
+                },
+                {
+                    "name": "Hip Grazed",
+                    "effect": "You must pass a Toughness tests or lower your Initiative by 3."
+                },
+                {
+                    "name": "Chest Graze",
+                    "effect": "You must pass a Resolve test to use Cast Magick, Inspiring Word, Litany of Hatred and Counterspell."
+                },
+                {
+                    "name": "Right Side Graze",
+                    "effect": "You must pass a Toughness test to use your right arm."
+                },
+                {
+                    "name": "Left Side Graze",
+                    "effect": "You must pass a Toughness test to use your left arm."
+                },
+                {
+                    "name": "Collar Bone Graze",
+                    "effect": "You must pass a Toughness test each Turn during combat or be Stunned."
+                }
+            ],
+            "serious": [
+                {
+                    "name": "Near Groin Impact",
+                    "effect": "You are Stunned."
+                },
+                {
+                    "name": "Abdomen Thru & Thru",
+                    "effect": "You can not eat and drink normally. Suffer 2d10 + 2 physical peril each day."
+                },
+                {
+                    "name": "Spine Shock",
+                    "effect": "You must roll a d6 chaos die at the end of each minute of heavy action (combat, chase, etc) if you roll a face 6, you are paralyzed for one minute."
+                },
+                {
+                    "name": "Ribs Broken",
+                    "effect": "You must flip to fail all tests that involve your voice or breath."
+                },
+                {
+                    "name": "Chest Punctured ⦿",
+                    "effect": "You must flip to fail all Combat and Brawn skill tests.",
+                    "⦿": "The shot is still lodged in place. A successful Heal test will remove the shot with no penalty to the victim. A failed Heal test will result in the shot being removed but the Patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the shot is part of the surgery"
+                },
+                {
+                    "name": "Armpit to Back Pierced",
+                    "effect": "Your Encumbrance limit is halved."
+                }
+            ],
+            "grievous": [
+                {
+                    "name": "Bullet Lodged in Hip ⦿",
+                    "status": "Incapacitated.",
+                    "drawback": "Restless Sleep (If you already have this Drawback, you permanently lose 3% Agility.)",
+                    "⦿": "The shot is still lodged in place. A successful Heal test will remove the shot with no penalty to the victim. A failed Heal test will result in the shot being removed but the Patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the shot is part of the surgery"
+                },
+                {
+                    "name": "Sternum Pierced",
+                    "status": "Incapacitated.",
+                    "drawback": "Bad Ticker (If you already have this Drawback, you permanently lose 3% Brawn.)"
+                },
+                {
+                    "name": "Gut Penetrated ⦿",
+                    "status": "Incapacitated.",
+                    "drawback": "Uncontrolled Retching (If you already have this Drawback, you permanently lose 6% Brawn.)",
+                    "⦿": "The shot is still lodged in place. A successful Heal test will remove the shot with no penalty to the victim. A failed Heal test will result in the shot being removed but the Patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the shot is part of the surgery"
+                },
+                {
+                    "name": "Collar Bone Break",
+                    "status": "Incapacitated.",
+                    "drawback": "Light Load (If you already have this Drawback, you permanently lose 6% Brawn.)"
+                },
+                {
+                    "name": "Spine Sting",
+                    "status": "Incapacitated.",
+                    "drawback": "Frequent Seizure (If you already have this Drawback, you permanently lose 9% Brawn.)"
+                },
+                {
+                    "name": "Lung Shot",
+                    "status": "Incapacitated.",
+                    "drawback": "Weak Lungs (If you already have this Drawback, you permanently lose 9% Brawn)"
+                }
+            ]
+        },
+        "legs": {
+            "moderate": [
+                {
+                    "name": "Ankle Graze",
+                    "effect": "Ignore Injury, you almost stumble as the bullet stings your ankle but catch yourself luckily. Fight on!"
+                },
+                {
+                    "name": "Calf Slashed",
+                    "effect": "Refer to the movement adjustment table on page 31."
+                },
+                {
+                    "name": "Knee Impact",
+                    "effect": "Refer to the movement adjustment table on page 31."
+                },
+                {
+                    "name": "Thigh Grazed",
+                    "effect": "Refer to the movement adjustment table on page 31."
+                },
+                {
+                    "name": "Hamstring Shock",
+                    "effect": "Refer to the movement adjustment table on page 31."
+                },
+                {
+                    "name": "Buttocks Scrape",
+                    "effect": "Refer to the movement adjustment table on page 31."
+                }
+            ],
+            "serious": [
+                {
+                    "name": "Foot Fracture",
+                    "effect": "Refer to the movement adjustment table on page 31. You cannot Climb or Jump."
+                },
+                {
+                    "name": "Calf Punctured",
+                    "effect": "Refer to the movement adjustment table on page 31. You cannot Dodge or Maneuver."
+                },
+                {
+                    "name": "Bullet Lodged in Knee ⦿",
+                    "effect": "Refer to the movement adjustment table on page 31. You cannot Charge or Run.",
+                    "⦿": "The shot is still lodged in place. A successful Heal test will remove the shot with no penalty to the victim. A failed Heal test will result in the shot being removed but the Patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the shot is part of the surgery"
+                },
+                {
+                    "name": "Thigh Fracture",
+                    "effect": "Refer to the movement adjustment table on page 31. You cannot make Attacks of Opportunity."
+                },
+                {
+                    "name": "Hamstring Tendons Cut",
+                    "effect": "Refer to the movement adjustment table on page 31. You are Prone. You cannot stand on your own."
+                },
+                {
+                    "name": "Double Thigh Pierced",
+                    "effect": "Refer to the movement adjustment table on page 31. You are Prone and Stunned. You cannot stand on your own."
+                }
+            ],
+            "grievous": [
+                {
+                    "name": "Achilles Tendon Severed",
+                    "status": "You cannot use Movement Actions as you are in pain.",
+                    "drawback": "Bum Leg (If you already have this Drawback, you permanently lose 3% Agility.)"
+                },
+                {
+                    "name": "Foot Devastated",
+                    "status": "You cannot use any weapon with an Encumbrance Value of 2 or more, as you are in pain.",
+                    "drawback": "Veteran's Boot (If you already have this Drawback, you permanently lose 6% Brawn.)"
+                },
+                {
+                    "name": "Shin Blasted Open",
+                    "status": "You cannot use Movement Actions as you are in pain.",
+                    "drawback": "Light Load (If you already have this Drawback, you permanently lose 6% Agility.)"
+                },
+                {
+                    "name": "Knee Shattered ⦿",
+                    "status": "You cannot use Movement Actions as you are in pain.",
+                    "drawback": "Manikin Joint (If you already have this Drawback, you permanently lose 6% Agility.)",
+                    "⦿": "The shot is still lodged in place. A successful Heal test will remove the shot with no penalty to the victim. A failed Heal test will result in the shot being removed but the Patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the shot is part of the surgery"
+                },
+                {
+                    "name": "Femoral Artery Puncture",
+                    "status": "Incapacitated.",
+                    "effect": "You are Bleeding",
+                    "drawback": "Veteran's Leg (If you already have this Drawback, you permanently lose 9% Agility.)"
+                },
+                {
+                    "name": "Femur Bone Fractured ⦿",
+                    "status": "You cannot use Movement Actions as you are in pain.",
+                    "drawback": "Hobbled Gait (If you already have this Drawback, you permanently lose 9% Brawn",
+                    "⦿": "The shot is still lodged in place. A successful Heal test will remove the shot with no penalty to the victim. A failed Heal test will result in the shot being removed but the Patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the shot is part of the surgery"
+                }
+            ]
+        }
+    },
+    "missile": {
+        "head": {
+            "moderate": [
+                {
+                    "name": "William Tell",
+                    "effect": "You ignore the injury, the arrow/bolt skims the top of your head, knocking offanything not strapped on."
+                },
+                {
+                    "name": "Neck Graze",
+                    "effect": "You must pass a Toughness Test or be Stunned, loose 1 Action Point this turn. Test each turn."
+                },
+                {
+                    "name": "Ear Nicked",
+                    "effect": "You must pass a Toughness Test in order to use any skill that involves hearing."
+                },
+                {
+                    "name": "Cheek Sting",
+                    "effect": "You must pass a Toughness Test in order to use any skill that involves your voice."
+                },
+                {
+                    "name": "Brow Graze",
+                    "effect": "You must pass a Toughness Test in order to use any skill that involves your vision."
+                },
+                {
+                    "name": "Adornment Removed",
+                    "effect": "Besides a helmet, anything worn on you head; earrings, necklace, nosering, eye patch, mask, etc. is cut and falls off. You cannot use the Resist action."
+                }
+            ],
+            "serious": [
+                {
+                    "name": "Neck Thru & Thru ⤖",
+                    "effect": "You must flip to fail Perilous Stunts",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Cheek & Tongue Skewered ⤖",
+                    "effect": "You must flip to fail all tests that involve your voice or breath.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Temple Slash",
+                    "effect": "You must flip to fail Intelligence base skills."
+                },
+                {
+                    "name": "Nape of Neck Sliced",
+                    "effect": "You must flip to fail Brawn based skills."
+                },
+                {
+                    "name": "Earlobe Severed",
+                    "effect": "Special Actions take one additional AP."
+                },
+                {
+                    "name": "Skips offSkull",
+                    "effect": "You must flip to fail Willpower based skills."
+                }
+            ],
+            "grievous": [
+                {
+                    "name": "Spine Pierced ⤖",
+                    "status": "Incapacitated",
+                    "drawback": "Ne'er Do Well If you already have this Drawback, you permanently lose 3% Will Power.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Carotid Artery Cut",
+                    "status": "Unconscious E ect: You are Bleeding",
+                    "drawback": "Sanguine Temperament If you already have this Drawback, you permanently lose 3% Perception."
+                },
+                {
+                    "name": "Throat Penetrated ⤖",
+                    "status": "You cannot talk as you're in pain.",
+                    "drawback": "Cat got your Tongue If you already have this Drawback, you can no longer speak.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Ear Ruptured ⤖",
+                    "status": "You cannot hear as you're in pain.",
+                    "drawback": "Crop Ear If you already have this Drawback, you permanently lose 6% Perception.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Eye Punctured ⤖",
+                    "status": "You cannot see as you're blinded.",
+                    "drawback": "Veteran's Eye If you already have this Drawback, you permanently lose 6% Perception.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Brain Damage ⤖",
+                    "status": "You are in a coma.",
+                    "drawback": "Frequent Seizure If you already have this Drawback, you permanently lose 9% Intelligence.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                }
+            ]
+        },
+        "arms": {
+            "moderate": [
+                {
+                    "name": "Barbed Wire Scar",
+                    "effect": "You ignore the Injury. The projectile grazes your bicep and will leave you with a barbed wire scar, minus the barbs. Fight on!"
+                },
+                {
+                    "name": "Thumb Graze",
+                    "effect": "You immediately drop whatever you are holding in this hand just out of reach. You must flip to fail all Combat tests that involve two-handed melee or ranged weapons."
+                },
+                {
+                    "name": "Wrist Lacerated",
+                    "effect": "You immediately drop whatever you are holding in this hand just out of reach. You cannot use Called Shot or Take Aim with this arm."
+                },
+                {
+                    "name": "Forearm Shave",
+                    "effect": "You immediately drop whatever you are holding in this hand just out of reach. You cannot use a thrown weapon."
+                },
+                {
+                    "name": "Bicep Tear",
+                    "effect": "You immediately drop whatever you are holding in this hand just out of reach."
+                },
+                {
+                    "name": "Tricep Nicked",
+                    "effect": "You immediately drop whatever you are holding in this hand just out of reach."
+                }
+            ],
+            "serious": [
+                {
+                    "name": "Pierced Through Center of Hand",
+                    "effect": "You immediately drop whatever you are holding in this hand just out of reach. You must flip to fail Melee Attack actions with this hand."
+                },
+                {
+                    "name": "Impaled Wrist to Elbow ⤖",
+                    "effect": "You immediately drop whatever you are holding in this hand just out of reach. You must flip to fail Ranged Attack actions with this hand.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Forearm Pierced ⤖",
+                    "effect": "You immediately drop whatever you are holding in this hand just out of reach. You must flip to fail Dodge, Opportunity Attack and Parry with this arm.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Elbow Rived",
+                    "effect": "You immediately drop whatever you are holding in this hand just out of reach. You must flip to fail all Attack Actions with this arm. Also you are Stunned."
+                },
+                {
+                    "name": "Humerus Bone Hit",
+                    "effect": "You immediately drop whatever you are holding in this hand just out of reach. You must flip to fail all tests that uses this arm."
+                },
+                {
+                    "name": "Bicep Pierced ⤖",
+                    "effect": "You immediately drop whatever you are holding in this hand just out of reach. You must flip to fail all tests that uses this arm. Also you are immediately Stunned.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                }
+            ],
+            "grievous": [
+                {
+                    "name": "Forearm Pinned to Body ⤖",
+                    "status": "You cannot use this arm, as you are in pain.",
+                    "drawback": "Bleeder. If you already have this Drawback, you permanently lose 3% Combat.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Wrist ﬂu & ﬂu ⤖",
+                    "status": "You cannot use this hand as you are in pain.",
+                    "drawback": "Limp Wrist. If you already have this Drawback, you permanently lose 6% Agility.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Elbow Splintered",
+                    "status": "You cannot use this arm as you are in pain.",
+                    "drawback": "Manikin Joint. If you already have this Drawback, you permanently lose 6% Combat."
+                },
+                {
+                    "name": "Shoulder Impaled ⤖",
+                    "status": "You cannot use this arm as you are in pain.",
+                    "drawback": "Light Load. If you already have this Drawback, you permanently lose 6% Agility.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Bicep Skewered ⤖",
+                    "status": "You cannot use this arm as you are in pain.",
+                    "drawback": "Limited Mobility. If you already have this Drawback, you permanently lose 9% Brawn.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Humerus Bone Hit",
+                    "status": "You cannot use this arm as you are in pain.",
+                    "drawback": "Limited Mobility. If you already have this Drawback, you permanently lose 9% Brawn."
+                }
+            ]
+        },
+        "body": {
+            "moderate": [
+                {
+                    "name": "Button Deflects Missile",
+                    "effect": "You ignore the Injury. Through luck or will of the gods, the arrow/bolt bounces offa metal button from your clothing/armor. Fight on!"
+                },
+                {
+                    "name": "Hip Sting",
+                    "effect": "You must suffer a -3 to your Initiative."
+                },
+                {
+                    "name": "Side Slice",
+                    "effect": "You must pass a Resolve test in order to use any Agility based skills."
+                },
+                {
+                    "name": "Chest Scrape",
+                    "effect": "You must pass a Resolve test to use Cast Magick, Inspiring Word, Litany of Hatred and Counterspell."
+                },
+                {
+                    "name": "Armpit Sting",
+                    "effect": "You must suffer a -3 to your Encumbrance."
+                },
+                {
+                    "name": "Shoulder Grazed",
+                    "effect": "You must flip to fail all skill tests with this arm."
+                }
+            ],
+            "serious": [
+                {
+                    "name": "Hip Cracked ⤖",
+                    "effect": "You do not get to roll 1d10 to add to your Initiative score for purposes of your placement on the Initiative ladder.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Abdomen Side Thru & Thru ⤖",
+                    "effect": "You must flip to fail Melee Combat Actions.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Chest Pierced ⤖",
+                    "effect": "Roll 1d6 chaos die, if face 6 is rolled you can do nothing this turn as you clutch the wound and grimace in pain.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Back Lacerated",
+                    "effect": "Your Encumbrance is halved."
+                },
+                {
+                    "name": "Armpit Sliced",
+                    "effect": "It will cost you 1 additional AP to do or use anything two-handed."
+                },
+                {
+                    "name": "Scapula Stricken",
+                    "effect": "You must flip to fail all Combat and Brawn based skills."
+                }
+            ],
+            "grievous": [
+                {
+                    "name": "Chest Penetrated ⤖",
+                    "status": "Incapacitated",
+                    "drawback": "Bad Ticker If you already suffer from this Drawback you lose 3% Brawn.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Side Skewered ⤖",
+                    "status": "Incapacitated",
+                    "drawback": "Restless Sleep If you already have this Drawback, you permanently lose 3% Agility.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Abdomen Gored ⤖",
+                    "status": "You cannot move as you are in pain.",
+                    "drawback": "Uncontrolled Retching If you already have this Drawback, you permanently lose 6% Brawn.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Sternum Strike ⤖",
+                    "status": "Incapacitated",
+                    "drawback": "Light Load If you already have this Drawback, you permanently lose 6% Brawn.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Lung Punctured ⤖",
+                    "status": "Unconscious",
+                    "drawback": "Weak Lung If you already suffer from this Drawback you lose 9% Brawn.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Heart Punctured ⤖",
+                    "status": "Dead",
+                    "drawback": "None",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                }
+            ]
+        },
+        "legs": {
+            "moderate": [
+                {
+                    "name": "Fletching Kiss",
+                    "effect": "Ignore Injury. A very near miss. You feel the fletching of the projectile skim the side of your leg. Fight on!"
+                },
+                {
+                    "name": "Foot Scratched",
+                    "effect": "Refer to the movement adjustment table on page 31."
+                },
+                {
+                    "name": "Shin Grazed",
+                    "effect": "Refer to the movement adjustment table on page 31."
+                },
+                {
+                    "name": "Knee Sliced",
+                    "effect": "Refer to the movement adjustment table on page 31."
+                },
+                {
+                    "name": "Thigh Nicked",
+                    "effect": "Refer to the movement adjustment table on page 31."
+                },
+                {
+                    "name": "Buttocks Grazed",
+                    "effect": "Refer to the movement adjustment table on page 31."
+                }
+            ],
+            "serious": [
+                {
+                    "name": "Ankle Sliced",
+                    "effect": "Refer to the movement adjustment table below. You cannot Charge, Get Up or Run."
+                },
+                {
+                    "name": "Calf Skewered ⤖",
+                    "effect": "Refer to the movement adjustment table below. You cannot use Chokehold, Stunning Blow or Takedown.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Knee Punctured ⤖",
+                    "effect": "Refer to the movement adjustment table below. You cannot Charge, Get Up, Maneuver, or Run. Also you must use 1 additional AP to Hustle.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Hamstring Ruptured",
+                    "effect": "Refer to the movement adjustment table below. You cannot Assist, Dodge or Parry."
+                },
+                {
+                    "name": "Thigh Intruded ⤖",
+                    "effect": "Refer to the movement adjustment table below. You are Prone and cannot get up on your own.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Hip Slashed",
+                    "effect": "Refer to the movement adjustment table below. You are Prone and cannot get up on your own. You are also Stunned for 1 minute."
+                }
+            ],
+            "grievous": [
+                {
+                    "name": "Thigh Mauled",
+                    "status": "Incapacitated",
+                    "drawback": "Bum Leg If you already suffer from this Drawback you lose 3% Agility."
+                },
+                {
+                    "name": "Ankle Shattered",
+                    "status": "You cannot use Movement Actions as you are in pain.",
+                    "drawback": "Pain Killer If you already suffer from this Drawback you lose 3% Agility."
+                },
+                {
+                    "name": "Foot Thru & Thru ⤖",
+                    "status": "You cannot use Movement Actions as you are in pain.",
+                    "drawback": "Veteran's Boot If you already suffer from this Drawback you lose 6% Agility.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Calf Mutilated",
+                    "status": "You cannot use Movement Actions as you are in pain.",
+                    "drawback": "Light Load If you already suffer from this Drawback you lose 6% Agility."
+                },
+                {
+                    "name": "Knee Thru & Thru ⤖",
+                    "status": "You cannot use Movement Actions as you are in pain.",
+                    "drawback": "Manikin Joint If you already suffer from this Drawback you lose 6% Agility.",
+                    "⤖": "The missile is still lodged in place. A successful Heal test will remove the missile with no penalty to the victim. A failed Heal test will result in the missile being removed but the patient will suffer 1d10+1 Physical Peril. A critical failure is the same as failure but the patient will suffer 2d10 +2 physical Peril. If the injury is Grievous, removing the missile is part of the surgery."
+                },
+                {
+                    "name": "Upper Leg Tendons Cut",
+                    "status": "Incapacitated",
+                    "drawback": "Hobbled Gait If you already suffer from this Drawback you lose 9% Brawn."
+                }
+            ]
+        }
+    }
+}

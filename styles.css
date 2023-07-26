@@ -1,0 +1,17 @@
+.controls {
+    margin-top: 20px;
+    padding: 0 10px 0 10px;
+}
+
+.button-list button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#hit-location-controls {
+    display: none;
+}
+
+#injury-level-controls {
+    display: none;
+}
